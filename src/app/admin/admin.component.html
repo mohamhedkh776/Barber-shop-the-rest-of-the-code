@@ -1,0 +1,37 @@
+<h2>Admin Page</h2>
+
+<div class="admin-info">
+  <h3>Barbershop Location</h3>
+  <p>{{ location }}</p>
+
+  <h3>Available Appointments</h3>
+  <ul>
+    <li *ngFor="let appointment of availableAppointments">
+      {{ appointment.date }} at {{ appointment.time }}
+    </li>
+  </ul>
+
+  <h3>About the Barbers</h3>
+  <div *ngFor="let barber of barbers">
+    <p>Name: {{ barber.name }}</p>
+    <p>Experience: {{ barber.experience }}</p>
+    <p>Specialties: {{ barber.specialties }}</p>
+    <hr>
+  </div>
+</div>
+
+<div *ngIf="bookedAppointments.length">
+  <h3>Booked Appointments</h3>
+  <ul>
+    <li *ngFor="let appointment of bookedAppointments">
+      {{ appointment.name }} - {{ appointment.phone }} - {{ appointment.date }} - {{ appointment.time }} - {{ appointment.package }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="notifications.length">
+  <h3>Notifications</h3>
+  <ul>
+    <li *ngFor="let notification of notifications">{{ notification }}</li>
+  </ul>
+</div>

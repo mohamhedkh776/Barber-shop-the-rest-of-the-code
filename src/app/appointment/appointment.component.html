@@ -1,0 +1,30 @@
+<h2>Book an Appointment</h2>
+<form (ngSubmit)="onSubmit()" #appointmentForm="ngForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="appointment.name" name="name" required>
+  
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" [(ngModel)]="appointment.phone" name="phone" required>
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" [(ngModel)]="appointment.date" name="date" required>
+
+  <label for="time">Time:</label>
+  <input type="time" id="time" [(ngModel)]="appointment.time" name="time" required min="12:00" max="20:00">
+
+  <label for="package">Package:</label>
+  <select id="package" [(ngModel)]="appointment.package" name="package" required>
+    <option value="Haircut">Haircut</option>
+    <option value="Haircut and Beard">Haircut and Beard</option>
+    <option value="Beard">Beard</option>
+    <option value="Style">Style</option>
+  </select>
+
+  <label for="barber">Barber:</label>
+  <select id="barber" [(ngModel)]="appointment.barber" name="barber" required>
+    <option value="Mohamed">Mohamed</option>
+    <option value="Yosef">Yosef</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>

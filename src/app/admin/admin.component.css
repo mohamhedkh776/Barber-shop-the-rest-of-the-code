@@ -1,0 +1,56 @@
+/* Add your styles for the admin page here */
+.admin-info {
+  margin-bottom: 20px;
+}
+
+.admin-info h3 {
+  margin-top: 0;
+}
+
+.admin-info p,
+.admin-info ul {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+.notifications {
+  margin-top: 20px;
+}
+
+.notifications h3 {
+  margin-top: 0;
+}
+
+.notifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notifications ul li {
+  margin: 5px 0;
+}
+
+.booked-appointments {
+  margin-top: 20px;
+}
+
+.booked-appointments h3 {
+  margin-top: 0;
+}
+
+.booked-appointments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.booked-appointments ul li {
+  margin: 5px 0;
+}
